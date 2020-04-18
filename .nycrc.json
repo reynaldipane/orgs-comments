@@ -1,0 +1,15 @@
+{
+    "all": true,
+    "include": [
+        "src/repositories/**/index.js",
+        "src/controllers/*.js",
+        "src/services/**/*.js"
+    ],
+    "exclude": [
+        "src/repository/**/model/*.js"
+    ],
+    "reporter": [
+    "text",
+    "lcov"
+    ]
+}
