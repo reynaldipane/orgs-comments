@@ -1,0 +1,3 @@
+module.exports = {
+    MONGOOSE_DUPLICATE_ERROR_NUMBER: 11000
+}
