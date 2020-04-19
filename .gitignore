@@ -1,4 +1,9 @@
+# package directories
 node_modules
 .nyc_output
 coverage
 .vscode
+jspm_packages
+
+# Serverless directories
+.serverless

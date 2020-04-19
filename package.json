@@ -18,11 +18,14 @@
     "express-validator": "^6.4.0",
     "joi": "^14.3.1",
     "mongoose": "^5.9.9",
+    "serverless-http": "^2.3.2",
     "underscore": "^1.10.2"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mockgoose": "^8.0.4",
+    "serverless-dotenv-plugin": "^2.4.2",
+    "serverless-offline": "^6.1.4",
     "sinon": "^9.0.2",
     "supertest": "^4.0.2"
   }

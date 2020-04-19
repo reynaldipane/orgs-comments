@@ -1,3 +1,4 @@
+const serverless = require('serverless-http');
 const express = require('express');
 const mongoose = require('mongoose');
 const apiLoader = require('./utils/api_loader');
@@ -24,4 +25,4 @@ app.use(require('./middlewares/response')());
 
 app.listen(app.config.port || 9000);
 
-module.exports = app;
+module.exports.handler = serverless(app);
