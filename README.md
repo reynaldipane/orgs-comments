@@ -2,6 +2,9 @@
 
 *ORGS-COMMENTS* is the codebase for organization's comment related API
 
+This application is deployed to AWS Lambda. You can access the endpoints with this base url
+`https://djxm0or2qd.execute-api.us-east-1.amazonaws.com/dev`
+
 ## App Stack
 
 ```
@@ -102,6 +105,8 @@ Failed Response example :
 ```
 
 ### Get Organization's Comment
+
+*NOTE:* If you are accessing this endpoint through deployed app in serverless, and you happen to use postman, please make sure to set the request body to the `none`. Or you'll get `Bad Request` error
 
 Use this endpoint to get list of comments for the organization in the request param
 
