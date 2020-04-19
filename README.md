@@ -12,11 +12,25 @@ mongodb (hosted in mlab)
 ## Prerequisite
 - node version >= 8.0
 - npm
+- docker (if you wanted to run this app locally via docker)
 
 ## Run Application
 ```
 npm install
 npm run launch:app
+```
+
+OR via *Docker*
+
+```
+docker build -t orgs-comments .
+docker run --name orgs-comments  -p <YOUR_PORT>:9000 -d orgs-comments
+```
+
+and to stop
+
+```
+docker stop orgs-comments
 ```
 
 ## Run Test
@@ -41,7 +55,7 @@ It will do the upsert action for organization, if the organization exist, then i
 
 ## API List
 
-If you run this app on your local, the `base-url` will be `http://localhost:9000`  by default, unless you overwrite the `PORT` env in the `.env` file
+If you run this app on your local, the `base-url` will be `http://localhost:9000`  by default, unless you overwrite the `PORT` env in the `.env` file or the port that you specify in <YOUR_PORT> when you run the app via *Docker*
 
 ### Add Comment
 
